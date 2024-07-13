@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ReVastra</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <section class="home">
+        <nav id="navbar">
+            <div class="logo-div">
+                <img src="logo.png" width="60" />
+                <a href="">PreVastra</a>
+            </div>
+            <div class="nav-items">
+                <li>
+                    <a href="" class="text-items">Home</a>
+                    <a href="" class="text-items">Lend your Attire</a>
+                    <a href="" class="text-items">Borrow an Attrire</a>
+                </li>
+                <div class="nav-action-btn">
+                    <button onclick="Login(true)">Login</button>
+                    <button> <a href="sign-up.html" style="text-decoration: none; color: black;">Sign Up</a></button>
+                </div>
+            </div>
+        </nav>
+        <dialog closed class="login-box">
+            <div class="login">
+                <i class="fa-solid fa-circle-xmark fa-xl cross" onclick="Login(false)"></i>
+                <h1>Log in</h1>
+                <div class="message" style="display: none;">Sorry, That login cred is incorrect</div>
+                <form class="login-form">
+                    <label>Username</label>
+                    <input type="text" name="username">
+
+                    <label>Password</label>
+                    <input type="password" name="password">
+
+                    <input type="submit" value="Log In">
+                    <input type="hidden" name="did_login" value="true">
+                </form>
+                <h6 style="text-align: center; cursor: pointer; margin-top: 30px;" onclick="Forget_Pass()">Forget your
+                    password ?</h6>
+            </div>
+        </dialog>
+        <section class="intro">
+            <div class="content">
+                <h1 id="info-head">Fasion on Rotation</h1>
+                <p class="animated">
+                    Unlock your wardrobe's potential and earn extra cash by listing your
+                    fabulous fashion on our rental platform. Your stunning style could
+                    be someone else's dream outfit!
+                </p>
+            </div>
+            <div class="image"><img onclick="window.location.href = 'link the page'" src="girl.png" width="470" /></div>
+        </section>
+        <section class="category" id="category">
+            <div class="category-gender"></div>
+            <div class="category-gender"></div>
+        </section>
+        <section class="banner">
+            <div class="cover">
+                <div class="cover-content">
+                    <h1>Revamp your wardrobe!</h1>
+                    <h1>Borrow trendy outfits today</h1>
+                    <p>
+                        Borrow an attire, which is perfect for your event. Whether it's a
+                        glamorous gala or a casual weekend getaway, our curated collection
+                        of fashion-forward outfits ensures you'll make a statement without
+                        breaking the bank. Say yes to affordability and style, and step
+                        out with confidence, knowing you've made a smart choice for your
+                        wardrobe and wallet
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="footer" id="footer">
+            <div class="container">
+                <div class="foot-items">
+                    <h4>ReVastra</h4>
+                    <a href="">Home</a>
+                    <a href="">Lend your Attire (Men)</a>
+                    <a href="">Lend your Attire (Women)</a>
+                    <a href="">Borrow an Attire</a>
+                </div>
+                <div class="newsletter">
+                    <h4>Subscribe to our newsletter</h4>
+                    <h6>Monthly digest of what's new and exciting from us</h6>
+                    <div class="email-news">
+                        <input type="text" id="newsletter-input" placeholder="Email address" />
+                        <button>Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <small style="text-align: center">2023 ReVastra Inc., All rights reserved</small>
+    <script src="script.js"></script>
+</body>
+
+</html>

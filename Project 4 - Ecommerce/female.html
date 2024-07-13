@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Male Attire</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="male.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="filter.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="logo-div">
+            <img src="logo.png" width="60" />
+            <a href="">PreVastra</a>
+        </div>
+        <div class="nav-items">
+            <li>
+                <a href="" class="text-items">Home</a>
+                <a href="" class="text-items">Lend your Attire</a>
+                <a href="" class="text-items">Borrow an Attrire</a>
+            </li>
+            <div class="nav-action-btn">
+                <button><a href="home.html" style="color: black; text-decoration: none;">Login</a></button>
+                <button> <a href="sign-up.html" style="text-decoration: none; color: black;">Sign Up</a></button>
+            </div>
+        </div>
+    </nav>
+    <section class="catlog">
+        <section id="banner">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="./Images/girl-sitting-green-backgroun.png" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="./Images/girl-2.png" style="width:100%">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </section>
+        <section id="collections">
+            <h1
+                style="text-align: center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                New Collection
+            </h1>
+            <div id="filterSortDialog" class="dialog" style="text-align: right; margin-right: 20px;">
+                <!-- <label for="filter">Filter by:</label>
+                <select id="filter">
+                    <option value="price">Price</option>
+                    <option value="category">Category</option>
+                </select> -->
+                <label for="sort">Sort by:</label>
+                <select id="sort">
+                    <option value="asc">Price: Low to High</option>
+                    <option value="desc">Price: High to Low</option>
+                    <option value="rating-asc">Rating: High to Low</option>
+                </select>
+                <label for="Category">Category:</label>
+                <select id="cat">
+                    <option value="none">Select</option>
+                    <option value="tuxedo">Tuxedo</option>
+                    <option value="blazer">Blazer</option>
+                    <option value="kurta">Kurta</option>
+                </select>
+                <button onclick="applyFilterSort()">Apply</button>
+            </div>
+            <section id="collection">
+                <div class="product" onclick="Products()">
+                    <div class="product-img-container">
+                        <img src="https://m.media-amazon.com/images/I/71A4UoV8nKL._SY879_.jpg" id="product-image" alt=""
+                            width="100%" id="product-img">
+                    </div>
+                    <div class="product-desc-container">
+                        <div class="product-desc-batch">
+                            <h1 id="product-batch">NEW</h1>
+                        </div>
+                        <div class="product-desc-1">
+                            <h1 id="product-title">Dress - 1</h1>
+                            <h4 id="product-cat">Dress Collection</h4>
+                            <div class="star-rating">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i>
+                            </div>
+                            <h3 class="product-info">SIZE</h3>
+                            <div class="product-size">
+                                <p>S</p>
+                                <p>M</p>
+                                <p>L</p>
+                                <p>XL</p>
+                            </div>
+                            <h3 class="product-info">Color</h3>
+                            <div class="product-color">
+                                <div class="color" style="background-color: black;"></div>
+                                <div class="color" style="background-color: green;"></div>
+                                <div class=" color" style="background-color: purple;"></div>
+                            </div>
+                            <div class="product-price-details">
+                                <button id="product-pricetag">$500</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- producst -->
+                <div class="product">
+                    <div class="product-img-container">
+                        <img src="https://m.media-amazon.com/images/I/41fD1yX-ByL._SY741_.jpg" id="product-image" alt=""
+                            width="100%" id="product-img">
+                    </div>
+                    <div class="product-desc-container">
+                        <div class="product-desc-batch">
+                            <h1 id="product-batch">Hot</h1>
+                        </div>
+                        <div class="product-desc-1">
+                            <h1 id="product-title">Dress - 2</h1>
+                            <h4 id="product-cat">Dress Collection</h4>
+                            <div class="star-rating">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i>
+                            </div>
+                            <h3 class="product-info">SIZE</h3>
+                            <div class="product-size">
+                                <p>S</p>
+                                <p>M</p>
+                                <p>XL</p>
+                            </div>
+                            <h3 class="product-info">Color</h3>
+                            <div class="product-color">
+                                <div class="color" style="background-color: black;"></div>
+                                <div class="color" style="background-color: green;"></div>
+                                <div class=" color" style="background-color: purple;"></div>
+                            </div>
+                            <div class="product-price-details">
+                                <button id="product-pricetag">$500</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-img-container">
+                        <img src="https://m.media-amazon.com/images/I/51G-x0vScUL._SX679_.jpg" id="product-image" alt=""
+                            width="100%" id="product-img">
+                    </div>
+                    <div class="product-desc-container">
+                        <div class="product-desc-batch" hidden>
+                            <h1 id="product-batch"></h1>
+                        </div>
+                        <div class="product-desc-1">
+                            <h1 id="product-title">Dress - 3</h1>
+                            <h4 id="product-cat">Dress Collection</h4>
+                            <div class="star-rating">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i>
+                            </div>
+                            <h3 class="product-info">SIZE</h3>
+                            <div class="product-size">
+                                <p>Free Size</p>
+                            </div>
+                            <h3 class="product-info">Color</h3>
+                            <div class="product-color">
+                                <div class="color" style="background-color: black;"></div>
+                                <div class="color" style="background-color: green;"></div>
+                                <div class=" color" style="background-color: purple;"></div>
+                            </div>
+                            <div class="product-price-details">
+                                <button id="product-pricetag">$500</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-img-container">
+                        <img src="https://m.media-amazon.com/images/I/51lqtkyYaiL._AC_UL480_QL65_.jpg"
+                            id="product-image" alt="" width="100%" id="product-img">
+                    </div>
+                    <div class="product-desc-container">
+                        <div class="product-desc-batch">
+                            <h1 id="product-batch">Trending</h1>
+                        </div>
+                        <div class="product-desc-1">
+                            <h1 id="product-title">Dress - 4</h1>
+                            <h4 id="product-cat">Dress Collection</h4>
+                            <div class="star-rating">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i>
+                            </div>
+                            <h3 class="product-info">SIZE</h3>
+                            <div class="product-size">
+                                <p>S</p>
+                                <p>M</p>
+                            </div>
+                            <h3 class="product-info">Color</h3>
+                            <div class="product-color">
+                                <div class="color" style="background-color: black;"></div>
+                                <div class="color" style="background-color: green;"></div>
+                                <div class=" color" style="background-color: purple;"></div>
+                            </div>
+                            <div class="product-price-details">
+                                <button id="product-pricetag">$500</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product End -->
+            </section>
+        </section>
+        <section class="footer" id="footer">
+            <div class="container">
+                <div class="foot-items">
+                    <h4>PreVastra</h4>
+                    <a href="">Home</a>
+                    <a href="">Lend your Attire (Men)</a>
+                    <a href="">Lend your Attire (Women)</a>
+                    <a href="">Borrow an Attire</a>
+                </div>
+                <div class="newsletter">
+                    <h4>Subscribe to our newsletter</h4>
+                    <h6>Monthly digest of what's new and exciting from us</h6>
+                    <div class="email-news">
+                        <input type="text" id="newsletter-input" placeholder="Email address" />
+                        <button>Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <script src="male.js"></script>
+</body>
+
+</html>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sign-up.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <section class="sign-up">
+        <nav id="navbar">
+            <div class="logo-div">
+                <img src="logo.png" width="60" />
+                <a href="">ReVastra</a>
+            </div>
+            <div class="nav-items">
+                <li>
+                    <a href="" class="text-items">Home</a>
+                    <a href="" class="text-items">Lend your Attire</a>
+                    <a href="" class="text-items">Borrow an Attrire</a>
+                </li>
+                <div class="nav-action-btn">
+                    <button><a href="home.html" style="color: black; text-decoration: none;">Login</a></button>
+                    <button> <a href="#" style="text-decoration: none; color: black;">Sign Up</a></button>
+                </div>
+            </div>
+        </nav>
+        <div class="form_wrapper">
+            <div class="form_container">
+                <div class="title_container">
+                    <h2>Create Account</h2>
+                </div>
+                <div class="row clearfix">
+                    <div class="">
+                        <form>
+                            <div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+                                <input type="email" name="email" placeholder="Email" required />
+                            </div>
+                            <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+                                <input type="password" name="password" placeholder="Password" required />
+                            </div>
+                            <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+                                <input type="password" name="password" placeholder="Re-type Password" required />
+                            </div>
+                            <div class="row clearfix">
+                                <div class="col_half">
+                                    <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                                        <input type="text" name="name" placeholder="First Name" required />
+                                    </div>
+                                </div>
+                                <div class="col_half">
+                                    <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                                        <input type="text" name="name" placeholder="User Name" required />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input_field radio_option">
+                                <input type="radio" name="radiogroup1" id="rd1" hidden>
+                                <label for="rd1">Male</label>
+                                <input type="radio" name="radiogroup1" id="rd2" hidden>
+                                <label for="rd2">Female</label>
+                            </div>
+                            <div class="input_field select_option">
+                                <select>
+                                    <option>Select Position</option>
+                                    <option>Lend Attire</option>
+                                    <option>Borrow Attire</option>
+                                </select>
+                                <div class="select_arrow"></div>
+                            </div>
+                            <div class="input_field checkbox_option">
+                                <input type="checkbox" id="cb1" hidden>
+                                <label for="cb1">I agree with terms and conditions</label>
+                            </div>
+                            <div class="input_field checkbox_option">
+                                <input type="checkbox" id="cb2" hidden>
+                                <label for="cb2">I want to receive the newsletter</label>
+                            </div>
+                            <input class="button" type="submit" value="Register" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+</body>
+
+</html>
